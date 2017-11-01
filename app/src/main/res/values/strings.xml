@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TQC_1</string>
+    <string name="calculation">發存整付計算</string>
+    <string name="mony">本金</string>
+    <string name="year">年利率</string>
+    <string name="deposit">存款期數</string>
+    <string name="enter">計算本利和</string>
+</resources>

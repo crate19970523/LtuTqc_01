@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suzumiya.ltutqc_01.MainActivity">
+
+    <TextView
+        android:id="@+id/calculation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculation"/>
+
+    <TextView
+        android:id="@+id/mony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/calculation"
+        android:text="@string/mony"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        app:layout_constraintTop_toBottomOf="@+id/userMony"/>
+
+    <TextView
+        android:id="@+id/deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userYear"
+        android:text="@string/deposit"/>
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enter"/>
+
+    <EditText
+        android:id="@+id/userMony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mony"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/userYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/year"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/userDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/deposit"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userDeposit"
+        android:text="@string/enter"
+        android:onClick="enterOnClick"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
